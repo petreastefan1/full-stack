@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+body{
+
+    background-color: #FAF6ED;
+}
+.header-container{
+    border:2px solid red;
+    height:120px;
+    background-image: linear-gradient(#D7685D,#D77D5B);
+    /* background-color:#D8745C; */
+    padding-left: 4%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+.register-item{
+    color:#FFF;
+    font-family: Montserrat;
+    font-size:small
+}
+
+.full-stack-item{
+    color:#FFF;
+    font-family: Montserrat;
+    font-size:35px
+
+}
