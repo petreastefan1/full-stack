@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin:0px;
+    
 }
 
 body{
@@ -20,6 +21,7 @@ body{
     
 }
 
+
 .register-item{
     color:#FFF;
     font-family: Montserrat;
@@ -31,4 +33,16 @@ body{
     font-family: Montserrat;
     font-size:35px
 
+}
+
+.field-item{
+    display:inline-block;
+    margin-top:2%;
+    padding-left: 4%;   
+}
+
+.legend-container{font-family: Montserrat;
+    font-weight:lighter;
+    margin-top:2%;
+    padding-left: 4%;
 }
