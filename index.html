@@ -1,38 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Conference</title>
+    <title>Full stack Conference</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-
     <header class="header-container">
-        <p class="header-item register-item">Register for</p>
-        <p class="header-item full-stack-item">Full Stack Conference</p>
-    </header>  
-    
-    <div class="field-item">* - required field </div>
-
-    <legend class="legend-container">
-        <h2>Basic Info</h2>
+        <p class="register-item">Register for</p>
+        <p class="conference-container"><b>Full Stack Conference</b></p>
+    </header>
+    <legend>
+        <p class="required-item">* - required field</p>
     </legend>
-    <section class="basic-info-container">
+    <main>
+
+        <section class="basic-shirt-role-container">
+
+            <section class="basic-info-container">
+                <h2 class="title-item">Basic Info</h2>
+
+                <label for="name">Name:*</label>
+                <input type="text" name="user_name">
+
+                <label for="name">Email Adress:*</label>
+                <input type="text" name="user_name">
+            </section>
+
+            <section class="shirt-info-container">
+                <h2 class="title-item">T-Shirt Info</h2>
+                <aside class="size-design-items">
+                    <aside class="size-container">
+                        <label class="size-label" for="size">Size:</label>
+                        <br>
+                        <select class="size-selector">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                            <option value="extra-large">XL</option>
+                        </select>
+                    </aside>
+
+                    <aside class="design-container">
+                        <label class="size-label" for="design">Design:</label>
+                        <select class="design-selector">
+                            <option selected disabled>Select Theme</option>
+                            <option value="stripes">Stripes</option>
+                            <option value="dotted">Dotted</option>
+                            <option value="collar">Collar</option>
+                        </select>
+                    </aside>
+                </aside>
+                <aside class="color-item">
+                    <label for="color">Color:</label>
+
+                    <select class="color-selector">
+                        <option selected disabled>Select a design theme above</option>
+                        <option value="stripes">Stripes</option>
+                        <option value="dotted">Dotted</option>
+                        <option value="collar">Collar</option>
+                    </select>
+                </aside>
+            </section>
         
-        <label for="name">Name:*</label>
-        <input type="text" name="user_name">
+        </section>
+        <p class="job-role-title">Job Role</p>
+        <aside class="job-role">
+            <!-- <label for="job-item">Job Role</label>
+            <br> -->
+                    <select class="job-role-selector">
+                        <option selected disabled>Select Job Role</option>
+                        <option value="frontend_developer">Front-End Developer</option>
+                        <option value="php_developer">PHP Developer</option>
+                        <option value="python_developer">Python Developer</option>
+                        <option value="rails_developer">Rails Developer</option>
+                        <option value="web_designer">Web Designer</option>
+                        <option value="wordpress_developer">WordPress Developer</option>
+                    </select>
+                <input class="other-item" placeholder="Other job role?" type="text" name="user_name">
+        </aside>
 
-        <label for="email">Email Address:*</label>
-        <input type="text" name="user_email">
-    </section>
 
+        <h2 class="register-title">Register for Activities *</h2>
 
+        <section class="main-conference">
+            <aside>
+            <input class="conference-checkbox" type="checkbox" id="conference" name="main_conference"><label class="main-conference-label"
+                for="design"><b>Main Conference</b></label><br>
+            </aside>
+            <aside class="image-dollar-item">
+            <img src="mockups/js.svg">
+            <p class="dollar-item"><b>$200</b></p>
+            </aside>
+        </section>
+
+        <section class="workshop-container">
+            <section class="libraries-container">
+                <aside class="libraries-item">
+                    <input class="conference-checkbox" type="checkbox" id="conference" name="main_conference"><label
+                        class="libraries-label" for="design"><b>JavaScript Libraries Workshop</b></label>                    
+                </aside>
+                <aside>
+                    <p><b>Tuesday 9am-12pm</b></p>
+                </aside>
+                <aside class="image-react-item">
+                    <img src="mockups/react.svg">
+                    <p class="react-item"><b>$200</b></p>
+                </aside>
+            </section>
+        </section>
+
+        </section>
+    </main>
 
 </body>
+
 </html>
