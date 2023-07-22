@@ -1,70 +1,192 @@
 *{
     box-sizing: border-box;
-    margin:0px;
-    
 }
 
-input , label, textarea,select{
-
+input label textarea select{
     display: block;
 }
 
-input{
+input,select{
     border:1px groove #DDD8D4;
     height:35px;
-    width:350px
+    width:300px
+}
+
+img{
+    height:25px;
+    width: 20px;
 }
 
 body{
-
     background-color: #FAF6ED;
+    margin:0px;
 }
+
+main{
+
+    padding-left:4%;
+    /* align-items: flex-start; */
+    border:2px solid rgb(58, 181, 212);
+}
+
+
 .header-container{
-    border:2px solid red;
-    height:120px;
-    background-image: linear-gradient(#D7685D,#D77D5B);
-    /* background-color:#D8745C; */
-    padding-left: 4%;
     display:flex;
     flex-direction: column;
     justify-content: center;
-
-    
-}
-
-
-.register-item{
-    color:#FFF;
-    font-family: Montserrat;
-    font-size:small
-}
-
-.full-stack-item{
-    color:#FFF;
-    font-family: Montserrat;
-    font-size:35px
-
-}
-
-.field-item{
-    display:inline-block;
-    margin-top:2%;
-    padding-left: 4%;   
-}
-
-.legend-container{font-family: Montserrat;
-    font-weight:lighter;
-    margin-top:2%;
+    /* border:2px solid blue; */
+    background:linear-gradient(#D8675F, #D77D5B);
+    height:10vh;
     padding-left: 4%;
+
 }
+
+.basic-shirt-role-container{
+    display:flex;
+    flex-direction: row;
+    /* border:2px solid blue */
+}
+.register-item{
+    font-family: Montserrat;
+    color: #FFF;
+    font-size: 10px;
+    margin-bottom: 0px;
+
+}
+
+.conference-container{
+    font-family: Montserrat;
+    color: #FFF;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.title-item{
+    font-family: Montserrat;
+    font-weight:600;
+    margin:0px
+}
+
 
 .basic-info-container{
-    border: 2px solid;
+    /* border:2px solid red; */
     display:flex;
     flex-direction: column;
-    margin-top:2%;
-    padding-left: 4%;
+    gap:10px;
+    width:320px;
+}
+
+.shirt-info-container{
+    /* border:2px solid blue; */
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
     width:450px;
-    gap:12px;
-    
+    padding-left: 40px;
+    gap:20px;
+}
+.size-selector{
+    width:50px;
+}
+
+.design-selector{
+    width:190px;
+}
+
+.design-container{
+    display:flex;
+    flex-direction: column;
+}
+
+/* .other-item{
+    width:320px;
+} */
+.color-selector{
+    width:260px;
+}
+
+.size-design-items{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.color-item{
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+.job-role-title{
+    margin:0px;
+    padding-top: 10px;
+    padding-bottom:5px;
+}
+
+.job-role{
+    display: flex;
+    gap:20px;
+}
+
+.main-conference{
+
+    /* border:2px solid red; */
+    height:80px;
+    width:620px
+}
+
+.conference-checkbox{
+    height:10px;
+    width:10px;
+
+
+}
+
+.main-conference{
+    background-color: #FFF;
+    padding-top:8px;
+    padding-left:8px;
+    display:flex;
+    gap:5px;
+    justify-content: space-between;
+}
+
+.main-conference-label{
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+.image-dollar-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+    gap:16px;
+}
+.dollar-item{   
+    margin:0px;
+    font-family: Roboto;
+    font-size:14px;
+}
+
+.workshop-container{
+    border:2px solid blue;
+}
+.libraries-container{
+    display:flex;
+    border:2px solid red;
+    flex-direction: row;
+    padding-top:8px;
+    padding-left:8px;
+    width:320px;
+    height:110px;
+    background-color: #FFF;
+
+}
+.libraries-item{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+
+    margin:0px;
 }
