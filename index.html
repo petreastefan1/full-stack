@@ -19,109 +19,241 @@
         <p class="register-item">Register for</p>
         <p class="conference-container"><b>Full Stack Conference</b></p>
     </header>
-    <legend>
-        <p class="required-item">* - required field</p>
-    </legend>
+
+    <div class="required-item">
+        <p >* - required field</p>
+    </div>
+
     <main>
-
-        <section class="basic-shirt-role-container">
-
-            <section class="basic-info-container">
-                <h2 class="title-item">Basic Info</h2>
-
+        <section class="basic-shirt-role-container info-container">
+            <div class="basic-info-title">
+                <h2>Basic Info</h2>
+            </div>
+            <div class="name-item">
                 <label for="name">Name:*</label>
-                <input type="text" name="user_name">
-
+                <input class="name-input" type="text" name="user_name">
+            </div>
+            <div class="email-item">
                 <label for="name">Email Adress:*</label>
-                <input type="text" name="user_name">
-            </section>
+                <input class="email-input" type="text" name="user_name">
+            </div>
 
-            <section class="shirt-info-container">
-                <h2 class="title-item">T-Shirt Info</h2>
-                <aside class="size-design-items">
-                    <aside class="size-container">
-                        <label class="size-label" for="size">Size:</label>
-                        <br>
-                        <select class="size-selector">
-                            <option value="small">S</option>
-                            <option value="medium">M</option>
-                            <option value="large">L</option>
-                            <option value="extra-large">XL</option>
-                        </select>
-                    </aside>
 
-                    <aside class="design-container">
-                        <label class="size-label" for="design">Design:</label>
-                        <select class="design-selector">
-                            <option selected disabled>Select Theme</option>
-                            <option value="stripes">Stripes</option>
-                            <option value="dotted">Dotted</option>
-                            <option value="collar">Collar</option>
-                        </select>
-                    </aside>
-                </aside>
-                <aside class="color-item">
-                    <label for="color">Color:</label>
+            <div class="shirt-info-title">
+                <h2>T-Shirt Info</h2>
+            </div>
 
-                    <select class="color-selector">
-                        <option selected disabled>Select a design theme above</option>
-                        <option value="stripes">Stripes</option>
-                        <option value="dotted">Dotted</option>
-                        <option value="collar">Collar</option>
-                    </select>
-                </aside>
-            </section>
-        
-        </section>
-        <p class="job-role-title">Job Role</p>
-        <aside class="job-role">
-            <!-- <label for="job-item">Job Role</label>
-            <br> -->
-                    <select class="job-role-selector">
-                        <option selected disabled>Select Job Role</option>
-                        <option value="frontend_developer">Front-End Developer</option>
-                        <option value="php_developer">PHP Developer</option>
-                        <option value="python_developer">Python Developer</option>
-                        <option value="rails_developer">Rails Developer</option>
-                        <option value="web_designer">Web Designer</option>
-                        <option value="wordpress_developer">WordPress Developer</option>
-                    </select>
+            <div class="size-container">
+                <label class="size-label" for="size">Size:</label>
+                <select class="size-selector">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="extra-large">XL</option>
+                </select>
+            </div>
+
+            <div class="design-container">
+                <label class="size-label" for="design">Design:</label>
+                <select class="design-selector">
+                    <option selected disabled>Select Theme</option>
+                    <option value="stripes">Stripes</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="collar">Collar</option>
+                </select>
+            </div>
+
+            <div class="color-item">
+                <label for="color-label">Color:</label>
+                <select class="color-selector">
+                    <option selected disabled>Select a design theme above</option>
+                    <option value="stripes">Stripes</option>
+                    <option value="dotted">Dotted</option>
+                    <option value="collar">Collar</option>
+                </select>
+            </div>
+
+
+            <div class="job-role">
+                <label class="job-role-title">Job Role</label>
+
+                <select class="job-role-selector">
+                    <option selected disabled>Select Job Role</option>
+                    <option value="frontend_developer">Front-End Developer</option>
+                    <option value="php_developer">PHP Developer</option>
+                    <option value="python_developer">Python Developer</option>
+                    <option value="rails_developer">Rails Developer</option>
+                    <option value="web_designer">Web Designer</option>
+                    <option value="wordpress_developer">WordPress Developer</option>
+                </select>
+            </div>
+            <div class="other-job-container">
                 <input class="other-item" placeholder="Other job role?" type="text" name="user_name">
-        </aside>
-
-
-        <h2 class="register-title">Register for Activities *</h2>
-
-        <section class="main-conference">
-            <aside>
-            <input class="conference-checkbox" type="checkbox" id="conference" name="main_conference"><label class="main-conference-label"
-                for="design"><b>Main Conference</b></label><br>
-            </aside>
-            <aside class="image-dollar-item">
-            <img src="mockups/js.svg">
-            <p class="dollar-item"><b>$200</b></p>
-            </aside>
+            </div>
         </section>
 
-        <section class="workshop-container">
-            <section class="libraries-container">
-                <aside class="libraries-item">
-                    <input class="conference-checkbox" type="checkbox" id="conference" name="main_conference"><label
-                        class="libraries-label" for="design"><b>JavaScript Libraries Workshop</b></label>                    
+        <section class="activities-container register-container">
+            <div class="register-title">
+                <h2>Register for Activities *</h2>
+            </div>
+
+            <div class="main-conference">
+                <aside class="conference-textbox">
+                    <input class="conference-checkbox" type="checkbox" >
+                    <label
+                        class="main-conference-label" for="conference"><b>Main Conference</b></label><br>
                 </aside>
-                <aside>
-                    <p><b>Tuesday 9am-12pm</b></p>
+                <aside class="image-dollar-item">
+                    <img src="mockups/js.svg">
+                    <p class="dollar-item"><b>$200</b></p>
                 </aside>
-                <aside class="image-react-item">
-                    <img src="mockups/react.svg">
-                    <p class="react-item"><b>$200</b></p>
-                </aside>
+            </div>
+
+            <section class="javascript workshop-container">
+                <section class="libraries-container">
+                    <aside class="libraries-item">
+                        <input class="conference-checkbox" type="checkbox">
+                        <label
+                            class="libraries-label" for="javascript"><b>JavaScript Libraries Workshop</b></label>
+                    </aside>
+                    <aside class="tuesday-text">
+                        <p><b>Tuesday 9am-12pm</b></p>
+                    </aside>
+                </section>
+                    <aside class="image-item">
+                        <img src="mockups/react.svg">
+                        <p class="react-item"><b>$100</b></p>
+                    </aside>
+            </section>
+
+            <section class="nodejs-container">
+                <section class="libraries-container">
+                    <aside class="libraries-item">
+                        <input class="conference-checkbox" type="checkbox">
+                        <label
+                            class="libraries-label" for="nodejs"><b>Node.js Workshop</b></label>
+                    </aside>
+                    <aside class="tuesday-text">
+                        <p><b>Tuesday 1pm-4pm</b></p>
+                    </aside>
+                </section>
+                    <aside class="image-item">
+                        <img src="mockups/node.svg">
+                        <p class="react-item"><b>$100</b></p>
+                    </aside>
+
+            </section>
+            <section class="frameworks-container">
+                <section class="libraries-container">
+                    <aside class="libraries-item">
+                        <input class="conference-checkbox" type="checkbox">
+                        <label
+                            class="libraries-label" for="frameworks"><b>JavaScript Frameworks Workshop</b></label>
+                    </aside>
+                    <aside class="tuesday-text">
+                        <p><b>Tuesday 9am-12pm</b></p>
+                    </aside>
+                </section>
+                    <aside class="image-item">
+                        <img src="mockups/angular.svg">
+                        <p class="react-item"><b>$100</b></p>
+                    </aside>
+
+            </section>
+
+            <section class="build-tools-container">
+                <section class="libraries-container">
+                    <aside class="libraries-item">
+                        <input class="conference-checkbox" type="checkbox">
+                        <label
+                            class="libraries-label" for="build"><b>Build tools Workshop</b></label>
+                    </aside>
+                    <aside class="tuesday-text">
+                        <p><b>Tuesday 1pm-4pm</b></p>
+                    </aside>
+                </section>
+                    <aside class="image-item">
+                        <img src="mockups/build.svg">
+                        <p class="react-item"><b>$100</b></p>
+                    </aside>
+
+            </section>
+
+            <section class="npm-container">
+                <section class="libraries-container">
+                    <aside class="libraries-item">
+                        <input class="conference-checkbox" type="checkbox">
+                        <label
+                            class="libraries-label" for="build"><b>npm  Workshop</b></label>
+                    </aside>
+                    <aside class="tuesday-text">
+                        <p><b>Wednesday 9am-12pm</b></p>
+                    </aside>
+                </section>
+                    <aside class="image-item">
+                        <img class="npm-image" src="mockups/npm.svg">
+                        <p class="react-item"><b>$100</b></p>
+                    </aside>
+
+            </section>
+
+            <section class="express-container">
+                <section class="libraries-container">
+                    <aside class="libraries-item">
+                        <input class="conference-checkbox" type="checkbox">
+                        <label
+                            class="libraries-label" for="build"><b>Express Workshop</b></label>
+                    </aside>
+                    <aside class="tuesday-text">
+                        <p><b>Wednesday  1pm-4pm</b></p>
+                    </aside>
+                </section>
+                    <aside class="image-item">
+                        <img src="mockups/express.svg">
+                        <p class="react-item"><b>$100</b></p>
+                    </aside>
+
             </section>
         </section>
+            
+        <section class="payment-container">
+            <div class="total-title">
+                <h2>Total:$0</h2>
+            </div>
+
+            <div class="payment-info-title">
+                <h2>Payment Info</h2>
+            </div>
+
+            <div class="pay-with-item">
+                <label class="pay-with-title">Job Role</label>
+                <select class="pay-method-selector">
+                    <option selected disabled>Select Payment Method</option>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="master_card">Master Card</option>
+                    <option value="revolut_card">Revolut</option>
+                </select>
+            </div>
+
+            <div class="card-number-item">
+                <label for="name">Card number:*</label>
+                <input class="email-input" type="text" name="user_name">
+            </div>
+
+
+
+
+
+
 
         </section>
+
+
+
+ 
+
     </main>
-<!-- comment -->
+
 </body>
 
 </html>
