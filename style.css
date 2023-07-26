@@ -29,6 +29,7 @@ input,select{
 img{
     height:25px;
     width: 20px;
+
 }
 .header-container{
     display:flex;
@@ -182,4 +183,160 @@ img{
 .color-selector{
     height:35px;
     background-color: #FEFDF9
+}
+
+.register-container{
+    display:grid;
+    grid-template-columns: 2.3fr 0.1fr 2.3fr;
+    grid-template-rows: 0.3fr 0.1fr 1fr  0.1fr 1fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 
+    "register . ."
+    ". . ."
+    "conference conference conference"
+    ". . ."
+    "workshop . node"
+    ". . ."
+    "frameworks . build"
+    ". . ."
+    "npm . express";
+}
+
+.register-title{
+    grid-area: register;
+}
+
+.main-conference{
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    grid-area: conference;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 617px;
+    padding:10px;
+    font-size: 15px;
+}
+
+.workshop-container{
+    grid-area:workshop;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.nodejs-container{
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    grid-area:node;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.conference-textbox{
+    display:flex;
+    width:150px;
+    gap:5px;
+
+}
+
+.image-dollar-item{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.libraries-container{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.libraries-item{
+    display:flex;
+    gap:5px;
+}
+
+.tuesday-text{
+    padding-left: 23px;;
+}
+
+.image-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+
+.frameworks-container{
+    border:1px solid #D4D1CA;
+    background-color: #FEFDF9;
+    grid-area: frameworks;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.build-tools-container{
+    grid-area: build;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.npm-container{
+    grid-area: npm;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.express-container{
+    grid-area: express;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.payment-container{
+    display:grid;
+    border:2px solid blue;
+    grid-template-columns: 2fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template-areas: 
+    ". . . . total"
+    "payment-title payment-title . . . "
+    "payment-method . . . .";
+}
+
+.total-title{
+    grid-area: total;
+}
+
+.payment-info-title{
+    grid-area:payment-title;
+}
+
+.pay-with-item{
+    grid-area:payment-method;
 }
