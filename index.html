@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,12 +23,15 @@
         <p class="conference-container"><b>Full Stack Conference</b></p>
     </header>
 
-    <div class="required-item">
-        <p >* - required field</p>
-    </div>
+
 
     <main>
+        <div class="required-item">
+            <p class="required-item-text">* - required field</p>
+        </div>
+        
         <section class="basic-shirt-role-container info-container">
+
             <div class="basic-info-title">
                 <h2>Basic Info</h2>
             </div>
@@ -76,7 +82,6 @@
 
             <div class="job-role">
                 <label class="job-role-title">Job Role</label>
-
                 <select class="job-role-selector">
                     <option selected disabled>Select Job Role</option>
                     <option value="frontend_developer">Front-End Developer</option>
@@ -218,15 +223,15 @@
             
         <section class="payment-container">
             <div class="total-title">
-                <h2>Total:$0</h2>
+                <h2 class="total-text-item">Total:$0</h2>
             </div>
 
             <div class="payment-info-title">
-                <h2>Payment Info</h2>
+                <h2 class="payment-text-item">Payment Info</h2>
             </div>
 
             <div class="pay-with-item">
-                <label class="pay-with-title">Job Role</label>
+                <label class="pay-with-title">I'm going to pay with:</label>
                 <select class="pay-method-selector">
                     <option selected disabled>Select Payment Method</option>
                     <option value="credit_card">Credit Card</option>
@@ -237,7 +242,64 @@
 
             <div class="card-number-item">
                 <label for="name">Card number:*</label>
-                <input class="email-input" type="text" name="user_name">
+                <input class="card-input" type="text" name="user_name">
+            </div>
+
+            <section class="expiration-date-container">
+                <label class="expiration-date-title">Expiration Date:</label>
+                <select class="expiration-date-selector">
+                    <option selected disabled>Select Date</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                </select>
+            </section>
+
+            <section class="expiration-year-container">
+                <label class="expiration-year-title">Expiration Year:</label>
+                <select class="expiration-year-selector">
+                    <option selected disabled>Select Date</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+
+                </select>
+            </section>
+
+            <div class="zip-code-container">
+                <label for="name">Zip Code:*</label>
+                <input class="zip-code-input" type="text">
+            </div>
+
+            <div class="ccv-container">
+                <label for="name">CCV:*</label>
+                <input class="ccv-input" type="text">
+            </div>
+
+            <section class="paypal-container">
+                <h3 class="paypal-text-title">PayPal</h3>
+                <p class="paypal-text-item">
+                    If you selected the PayPal option we'll take you to Paypal's site to 
+                    set up your biling information, when you click "Register" below.
+                </p>
+
+            </section>
+
+            <section class="bitcoin-container">
+                <h3 class="bitcoin-text-title">Bitcoin</h3>
+                <p class="bitcoin-text-item">
+                    If you selected the Bitcoin Option wel'' take you to the Coinbase site to set up your billing information.
+                    Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.
+                </p>
+            </section>
+
+            <div class="button-container">
+                <button class="button-text-item"><b>Register</b></button>
             </div>
 
 
@@ -245,8 +307,8 @@
 
 
 
-
         </section>
+
 
 
 

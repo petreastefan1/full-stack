@@ -12,8 +12,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border:2px solid red;
-
+    padding-bottom: 20px;
  }
 
 
@@ -58,10 +57,8 @@ img{
 }
 
 .info-container{
-
     display: grid;
     grid-template-columns: 1.7fr 0.4fr 0.4fr 1fr;
-
     grid-template-areas:
     "basic . shirt shirt"
     "name . size design"
@@ -75,7 +72,9 @@ img{
 
 .required-item{
     display:flex;
-    align-content: flex-start;
+    justify-content: start;
+    width:620px;
+
 }
 
 .name-item{
@@ -320,13 +319,20 @@ img{
 }
 
 .payment-container{
+    width:618px;
     display:grid;
-    border:2px solid blue;
-    grid-template-columns: 2fr 0.1fr 1fr 0.1fr 1fr;
+    grid-template-columns: 2fr 0.15fr 0.9fr 0.1fr 0.9fr;
+    grid-template-rows: 0.8fr 0.6fr 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr 0.5fr;
     grid-template-areas: 
     ". . . . total"
     "payment-title payment-title . . . "
-    "payment-method . . . .";
+    "payment-method . date . year"
+    "card-number . zip-code . ccv-code"
+    "paypal paypal paypal paypal paypal"
+    "bitcoin bitcoin bitcoin bitcoin bitcoin"
+    ". . . . ."
+    "register . . . ."
+    ;
 }
 
 .total-title{
@@ -335,8 +341,162 @@ img{
 
 .payment-info-title{
     grid-area:payment-title;
+
 }
 
 .pay-with-item{
     grid-area:payment-method;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.expiration-date-container{
+    grid-area:date;
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.expiration-year-container{
+    grid-area:year;
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.zip-code-container{
+    grid-area:zip-code;
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+    padding-top:10px
+}
+
+.ccv-container{
+    grid-area:ccv-code;
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+    padding-top:10px
+}
+
+
+.payment-text-item{
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.total-text-item{
+    margin-bottom:0px;
+}
+
+.pay-method-selector{
+    height:35px;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    outline: 0;
+}
+
+.card-number-item{
+    grid-area:card-number;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    padding-top:10px;
+
+}
+
+.card-input{
+    height:35px;
+    background-color: #FEFDF9; 
+    outline: 0;
+}
+
+.expiration-date-selector{
+    height:35px;
+    background-color: #FEFDF9; 
+    outline: 0;
+    width:140px;
+}
+
+.expiration-year-selector{
+    height:35px;
+    background-color: #FEFDF9; 
+    outline: 0;
+    width:140px;
+}
+
+.zip-code-input{
+    height:35px;
+    background-color: #FEFDF9; 
+    outline: 0;
+    width:140px;
+}
+
+.ccv-input{
+    height:35px;
+    background-color: #FEFDF9; 
+    outline: 0;
+    width:140px;
+}
+
+.paypal-container{
+    grid-area:paypal;
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+    padding:5px;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    gap:7px;
+
+}
+
+.paypal-text-title{
+    margin:0px;
+}
+
+.paypal-text-item{
+    margin:0px;
+    font-size: 15px;
+}
+
+.bitcoin-container{
+    grid-area:bitcoin;
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+    padding:5px;
+    background-color: #FEFDF9;
+    border:1px solid #D4D1CA;
+    gap:7px;
+}
+
+.bitcoin-text-title{
+    margin:0px;
+}
+
+.bitcoin-text-item{
+    margin:0px;
+    font-size: 15px;
+}
+
+.button-container{
+    grid-area: register;
+
+}
+
+.button-text-item{
+    display:flex;
+    height:35px;
+    width:100px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    background-color: #D63368;
+    font-family: Roboto;
+    border:0.5px solid ;
+    border-radius: 3px;
 }
